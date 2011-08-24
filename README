@@ -3,6 +3,7 @@ It will live at isaac.gateno.net.
 Get excited.
 
 isaac.gateno.net will use the following technologies
+
 - node.js
 - express
 - jade
@@ -11,10 +12,22 @@ isaac.gateno.net will use the following technologies
 - git
 - Amazon EC2
 
-Setup
+
+Mac Dev Environment Setup
+
 - Graphical installer for node.jsa and npm on OSX
 - Installed Homebrew using shell script -> /usr/bin/ruby -e "$(curl -fsSL https://raw.github.com/gist/323731)"
 - Changed owner for /usr/local/bin using script -> sudo chown -R `whoami` /usr/local
 - npm install -g express
 - Created express app inside repository -> express -s -t jade -c less
 - Still inside repo ->  npm install jade && npm install less
+
+
+Ubuntu Server Setup
+
+- Install git
+- Install node.js:
+    sudo apt-get install python-software-properties
+    sudo add-apt-repository ppa:chris-lea/node.js
+    sudo apt-get update
+    sudo apt-get install nodejs
