@@ -1,6 +1,47 @@
+// Semantic Grid System
+@import 'public/stylesheets/reset.less';
+@import 'public/stylesheets/grid.less';
+
+// grid variables
+@columns: 12;
+@column-width: 60;
+@gutter-width: 20;
+
+// colors
+@black: #000000;
+@neutral_grey: #808080;
+
+// center the contents
+div.center {
+	width: 960px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
 body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 16px Helvetica, Arial, "Lucida Grande", sans-serif;
+  line-height: 25px;
+  color: @neutral_grey;
+  padding-top: 50px;
+
+  h1 {
+    font-size: 89px;
+    line-height: 89px;
+    color: @black;
+  }
+  h2 {
+    font-size: 21px;
+    line-height: 21px;
+  }
+  .title {
+    .column(10);
+    padding-top: 250px;
+    padding-bottom: 25px;
+  }
+  .picture {
+    .column(2);
+    display: none;
+  }
 }
 
 a {

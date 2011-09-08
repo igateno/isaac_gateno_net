@@ -8,6 +8,7 @@ isaac.gateno.net will use the following technologies
 - express
 - jade
 - less css
+- Semantic Grid System
 - mongoDB
 - git
 - Amazon EC2
