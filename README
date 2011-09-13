@@ -21,7 +21,7 @@ Mac Dev Environment Setup
 - Changed owner for /usr/local/bin using script -> sudo chown -R `whoami` /usr/local
 - npm install -g express
 - Created express app inside repository -> express -s -t jade -c less
-- Still inside repo ->  npm install jade && npm install less
+- Still inside repo -> npm install express stylus mongodb mongoose jade socket.io connect-mongodb
 
 
 Ubuntu Server Setup
