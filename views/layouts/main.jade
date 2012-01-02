@@ -1,0 +1,40 @@
+!!!
+html
+  head
+    title= 'Isaac Gateño';
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body
+    div.menuback
+      div.menubar
+        h1 Isaac Gateño
+        ul
+          li
+            - if (page == 'blog')
+              div.tab.selected
+                a(href="blog") Blog
+            - else
+              div.tab
+                a(href="blog") Blog
+          li
+            - if (page == 'photos')
+              div.tab.selected
+                a(href="photos") Photos
+            - else
+              div.tab
+                a(href="photos") Photos
+          li
+            - if (page == 'resume')
+              div.tab.selected
+                a(href="resume") Resume
+            - else
+              div.tab
+                a(href="resume") Resume
+          li
+            - if (page == 'about')
+              div.tab.selected
+                a(href="about") About
+            - else
+              div.tab
+                a(href="about") About
+    div.currentback
+      div.current_page!= body

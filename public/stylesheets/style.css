@@ -1,4 +1,4 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -128,16 +128,19 @@ body {
   width: 100%;
   float: left;
 }
+html, body {
+  height: 100%;
+}
 div.center {
   width: 960px;
+  min-height: 100%;
   margin: 0 auto;
   overflow: hidden;
 }
 body {
-  font: 16px Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: 62.5% Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 25px;
   color: #808080;
-  padding-top: 50px;
 }
 body h1 {
   font-size: 89px;
@@ -148,21 +151,78 @@ body h2 {
   font-size: 21px;
   line-height: 21px;
 }
-body .title {
+body .landing .title {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 780px;
-  margin: 0 10px;
+  width: 81.25%;
+  margin: 0 1.0416666666666665%;
   padding-top: 250px;
   padding-bottom: 25px;
 }
-body .picture {
+body .landing .picture {
   display: inline;
   float: left;
   overflow: hidden;
-  width: 140px;
-  margin: 0 10px;
+  width: 14.583333333333334%;
+  margin: 0 1.0416666666666665%;
+}
+body .menuback {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 22.916666666666664%;
+  margin: 0 1.0416666666666665%;
+  background-color: #000000;
+  min-height: 100%;
+  min-width: 240px;
+  margin: 0;
+}
+body .menuback .menubar {
+  width: 240px;
+  float: right;
+}
+body .menuback .menubar h1 {
+  font-size: 48px;
+  line-height: 48px;
+  color: #ffffff;
+}
+body .menuback .menubar ul {
+  padding: 25px 0px 25px 50px;
+}
+body .menuback .menubar ul li {
+  color: #ffffff;
+  font-size: 36px;
+  line-height: 36px;
+}
+body .menuback .menubar ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+body .menuback .menubar ul li .selected {
+  background-color: #ffffff;
+}
+body .menuback .menubar ul li .selected a {
+  color: #000000;
+}
+body .currentback {
+  display: inline;
+  float: left;
+  overflow: hidden;
+  width: 72.91666666666666%;
+  margin: 0 1.0416666666666665%;
+  background-color: #ffffff;
+  min-height: 100%;
+  min-width: 720px;
+  margin: 0;
+  padding: 0;
+}
+body .currentback .current_page {
+  float: left;
+}
+body .currentback .current_page .post {
+  font: 1.5em Georgia, Times, 'Times New Roman', serif;
+  line-height: 1.8em;
 }
 a {
   color: #00B7FF;

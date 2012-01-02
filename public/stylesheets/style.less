@@ -7,22 +7,29 @@
 @column-width: 60;
 @gutter-width: 20;
 
+@total-width: 100%;
+
 // colors
 @black: #000000;
 @neutral_grey: #808080;
+@white: #ffffff;
+
+html, body {
+  height: 100%;
+}
 
 // center the contents
 div.center {
 	width: 960px;
+  min-height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 }
 
 body {
-  font: 16px Helvetica, Arial, "Lucida Grande", sans-serif;
+  font: 62.5% Helvetica, Arial, "Lucida Grande", sans-serif;
   line-height: 25px;
   color: @neutral_grey;
-  padding-top: 50px;
 
   h1 {
     font-size: 89px;
@@ -33,13 +40,77 @@ body {
     font-size: 21px;
     line-height: 21px;
   }
-  .title {
-    .column(10);
-    padding-top: 250px;
-    padding-bottom: 25px;
+
+  .landing {
+    .title {
+      .column(10);
+      padding-top: 250px;
+      padding-bottom: 25px;
+    }
+    .picture {
+      .column(2);
+    }
   }
-  .picture {
-    .column(2);
+
+  .menuback {
+    .column(3);
+
+    background-color: @black;
+    min-height: 100%;
+    min-width: 240px;
+    margin: 0;
+
+    .menubar {
+      width: 240px;
+      float: right;
+
+      h1 {
+        font-size: 48px;
+        line-height: 48px;
+        color: @white;
+      }
+
+      ul {
+        padding: 25px 0px 25px 50px;
+
+        li {
+          color: @white;
+          font-size: 36px;
+          line-height: 36px;
+
+          a {
+            text-decoration: none;
+            color: @white;
+          }
+
+          .selected {
+            a {
+              color: @black;
+            }
+            background-color: @white;
+          }
+        }
+      }
+    }
+  }
+
+  .currentback {
+    .column(9);
+
+    background-color: @white;
+    min-height: 100%;
+    min-width: 720px;
+    margin: 0;
+    padding: 0;
+
+    .current_page {
+      float: left;
+
+      .post {
+        font: 1.5em Georgia, Times, 'Times New Roman', serif;
+        line-height: 1.8em;
+      }
+    }
   }
 }
 
